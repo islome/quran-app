@@ -15,12 +15,13 @@ export const metadata: Metadata = {
   description:
     "Qur'oni Karimni o'qish, tinglash va sevimlilarga saqlash uchun zamonaviy web ilova",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png", 
+    apple: "/icon.png", 
   },
   openGraph: {
     title: "Al-Qur'an",
     description: "Qur'oni Karimni o'qish va tinglash",
-    images: [{ url: "/og-image.jpg" }],
+    images: [{ url: "/icon.png" }],
   },
 };
 

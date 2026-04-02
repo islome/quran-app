@@ -309,17 +309,13 @@ export default function SurahDetailPage({
         </div>
       </main>
 
-      {/* Hidden Audio Element */}
       <audio
         ref={audioRef}
         preload="none"
-        crossOrigin="anonymous"
-        onError={(e) => {
-          const error = audioRef.current?.error;
-          console.error("Audio error event:", e);
-          if (error) {
-            console.error("MediaError code:", error.code, "message:", error.message);
-          }
+        onError={(e) => console.error("Audio error:", e)}
+        onEnded={() => {
+          setIsPlaying(false);
+          setCurrentAyah(null);
         }}
       />
     </div>
