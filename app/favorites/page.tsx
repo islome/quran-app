@@ -20,7 +20,7 @@ export default function FavoritesPage() {
   const [removing, setRemoving] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch("http://api.alquran.cloud/v1/surah")
+    fetch("https://api.alquran.cloud/v1/surah")
       .then((res) => res.json())
       .then((data) => {
         if (data.data) setSurahs(data.data);

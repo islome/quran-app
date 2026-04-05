@@ -48,7 +48,7 @@ export default function SurahsPage() {
   };
 
   useEffect(() => {
-    fetch("http://api.alquran.cloud/v1/surah")
+    fetch("https://api.alquran.cloud/v1/surah")
       .then((res) => res.json())
       .then((data) => {
         if (data.data) {
